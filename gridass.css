@@ -1,0 +1,102 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    background-color:grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    transition: ease-in;
+    
+    
+
+}
+
+
+.item{
+    font-size: 25px;
+    padding: 70px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    background-image: url(https://images.unsplash.com/photo-1599940824399-b87987ceb72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80);
+}
+
+#miles{
+    background-image: url(https://images.unsplash.com/photo-1454789476662-53eb23ba5907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1504&q=80);
+    color: black;
+}
+
+
+
+#work{
+    background-image: url(https://images.unsplash.com/photo-1454789476662-53eb23ba5907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1504&q=80); 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    
+
+}
+
+#body{
+    background-image: url(https://images.unsplash.com/photo-1454789476662-53eb23ba5907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1504&q=80); 
+    color: black;
+
+
+} 
+
+.grid-container> div:hover{
+    opacity: 0.6;
+    transform: scale(0.98);
+    transition: 0.5s ease-in;
+
+}
+
+
+
+@media only screen and (min-width:900px) {
+   
+    #heart{
+        background-image: url(https://images.unsplash.com/photo-1454789476662-53eb23ba5907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1504&q=80);
+        grid-column: 3 / 5;
+    }
+
+    #blood{
+        background-image: url(https://images.unsplash.com/photo-1454789476662-53eb23ba5907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1504&q=80);
+        grid-column: 3 / 5;
+    }
+    #goals{
+        
+        grid-column: 1 / 3;
+    }
+    #avg{
+        background-image: url(https://images.unsplash.com/photo-1454789476662-53eb23ba5907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1504&q=80);
+        grid-column: 1 / 3;
+    }
+    
+    
+
+   
+}
+
+@media only screen and (max-width:900px){
+    .grid-container{
+    grid-template-columns:repeat(3, 1fr)
+    }
+    
+}
+@media only screen and ( max-width:600px){
+    .grid-container{
+        grid-template-columns: repeat(2,1fr)
+    }
+}
+
+@media only screen and ( max-width : 375px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr)
+    }
+}
+
+
